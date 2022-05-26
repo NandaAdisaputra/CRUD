@@ -1,4 +1,4 @@
-package com.maysarohnikenayusaraswati.crud.room
+package com.nandaadisaputra.crud.room
 
 import android.content.Context
 import androidx.room.Database

@@ -1,4 +1,4 @@
-package com.maysarohnikenayusaraswati.crud
+package com.nandaadisaputra.crud
 
 import org.junit.Test
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.maysarohnikenayusaraswati.crud">
+    package="com.nandaadisaputra.crud">
 
     <application
         android:allowBackup="true"
@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CRUD">
-        <activity android:name="com.maysarohnikenayusaraswati.crud.activity.MainActivity"
+        <activity android:name="com.nandaadisaputra.crud.activity.MainActivity"
             android:exported="true"/>
-        <activity android:name="com.maysarohnikenayusaraswati.crud.activity.DetailLoginActivity"
+        <activity android:name="com.nandaadisaputra.crud.activity.DetailLoginActivity"
             android:exported="true"/>
-        <activity android:name="com.maysarohnikenayusaraswati.crud.activity.EditLoginActivity"
+        <activity android:name="com.nandaadisaputra.crud.activity.EditLoginActivity"
             android:exported="true"/>
-        <activity android:name="com.maysarohnikenayusaraswati.crud.splash.SplashScreenActivity"
+        <activity android:name="com.nandaadisaputra.crud.splash.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

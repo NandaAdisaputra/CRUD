@@ -1,4 +1,4 @@
-package com.maysarohnikenayusaraswati.crud.activity
+package com.nandaadisaputra.crud.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,11 +12,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.isNotEmpty
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.maysarohnikenayusaraswati.crud.R
-import com.maysarohnikenayusaraswati.crud.adapter.LoginAdapter
-import com.maysarohnikenayusaraswati.crud.databinding.ActivityMainBinding
-import com.maysarohnikenayusaraswati.crud.room.LoginDatabase
-import com.maysarohnikenayusaraswati.crud.room.LoginModel
+import com.nandaadisaputra.crud.R
+import com.nandaadisaputra.crud.adapter.LoginAdapter
+import com.nandaadisaputra.crud.databinding.ActivityMainBinding
+import com.nandaadisaputra.crud.room.LoginDatabase
+import com.nandaadisaputra.crud.room.LoginModel
 import java.util.concurrent.Executors
 
 class MainActivity : AppCompatActivity() {

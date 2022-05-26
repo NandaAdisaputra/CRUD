@@ -1,13 +1,13 @@
-package com.maysarohnikenayusaraswati.crud.adapter
+package com.nandaadisaputra.crud.adapter
 
 import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.maysarohnikenayusaraswati.crud.activity.DetailLoginActivity
-import com.maysarohnikenayusaraswati.crud.databinding.ItemsDataBinding
-import com.maysarohnikenayusaraswati.crud.room.LoginModel
+import com.nandaadisaputra.crud.activity.DetailLoginActivity
+import com.nandaadisaputra.crud.databinding.ItemsDataBinding
+import com.nandaadisaputra.crud.room.LoginModel
 
 class LoginAdapter(private val item: List<LoginModel>)
 : RecyclerView.Adapter<LoginAdapter.ViewHolder>() {
