@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aplikasi Masuk</string>
+    <string name="enter_username">Masukkan Nama Pengguna</string>
+    <string name="login">Aplikasi Login Database Kamar</string>
+    <string name="enter_password">Masukkan Sandi</string>
+    <string name="enter_pin">Masukkan PIN</string>
+    <string name="save">Simpan</string>
+    <string name="view">Lihat</string>
+    <string name="delete">Hapus</string>
+    <string name="username">Nama Pengguna</string>
+    <string name="password">Sandi</string>
+    <string name="pin">PIN</string>
+    <string name="edit_data_login">Sunting Data Masuk</string>
+    <string name="detail_data_login">Detail Data Masuk</string>
+    <string name="edit">Sunting</string>
+    <string name="menu">Menu</string>
+</resources>

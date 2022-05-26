@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textAllCaps="true"
+        android:textColor="@color/textColorButton"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switch_dark_mode" />
+
+    <Switch
+        android:id="@+id/switch_dark_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:gravity="center"
+        android:onClick="buttonSwitch"
+        android:textSize="@dimen/_12ssp"
+        android:thumb="@drawable/ic_dark_mode"
+        android:thumbTint="@color/thumbTintMoon"
+        android:track="@drawable/background_switch_dark_mode"
+        app:layout_constraintBottom_toTopOf="@id/titleLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/add_user_name_text_input_layout"
+        style="@style/TextInputLayoutBoxColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:hint="@string/username"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+        app:layout_constraintBottom_toTopOf="@id/add_password_input_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleLogin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:autofillHints="@string/enter_username"
+            android:hint="@string/enter_username"
+            android:inputType="textPersonName|textAutoComplete"
+            android:padding="@dimen/_8sdp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/add_password_input_layout"
+        style="@style/TextInputLayoutBoxColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/password"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+        app:layout_constraintBottom_toTopOf="@id/add_pin_input_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_user_name_text_input_layout">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:autofillHints="@string/enter_password"
+            android:hint="@string/enter_password"
+            android:inputType="textVisiblePassword|numberPassword|textPassword|textAutoComplete"
+            android:padding="@dimen/_8sdp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/add_pin_input_layout"
+        style="@style/TextInputLayoutBoxColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="@string/pin"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+        app:layout_constraintBottom_toTopOf="@id/viewData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_password_input_layout">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:autofillHints="@string/enter_pin"
+            android:hint="@string/enter_pin"
+            android:inputType="number|textAutoComplete"
+            android:padding="@dimen/_8sdp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/saveData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/background_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="saveData"
+        android:padding="@dimen/_8sdp"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="@string/save"
+        android:textColor="@color/textColorButton"
+        app:layout_constraintEnd_toStartOf="@id/viewData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_pin_input_layout" />
+
+    <TextView
+        android:id="@+id/viewData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/background_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="viewData"
+        android:padding="@dimen/_8sdp"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="@string/view"
+        android:textColor="@color/textColorButton"
+        app:layout_constraintEnd_toStartOf="@id/deleteData"
+        app:layout_constraintStart_toEndOf="@id/saveData"
+        app:layout_constraintTop_toBottomOf="@id/add_pin_input_layout"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/deleteData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/background_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="deleteData"
+        android:padding="@dimen/_8sdp"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="@string/delete"
+        android:textColor="@color/textColorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/viewData"
+        app:layout_constraintTop_toBottomOf="@id/add_pin_input_layout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerUser"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:padding="@dimen/_8sdp"
+        android:background="@color/blueTrack"
+        tools:listitem="@layout/items_data"
+        app:layout_constraintStart_toStartOf="@id/saveData"
+        app:layout_constraintEnd_toEndOf="@id/deleteData"
+        app:layout_constraintTop_toBottomOf="@id/viewData"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
